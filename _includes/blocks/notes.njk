@@ -1,3 +1,4 @@
+<h2>Notes</h2>
 <ul>
 {%- for note in collections.notes | reverse -%}
 	<li><a href="{{ note.url | url }}" title="{{ note.data.title }}">{{ note.data.title }}</a> &ndash; {{ note.data.date.toDateString('en-GB') }}</li>
