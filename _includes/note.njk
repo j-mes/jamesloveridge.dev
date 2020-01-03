@@ -4,8 +4,13 @@
 	<body>
 		{% include './blocks/header.njk' %}
 		<main>
-			<article>{{ content | safe }}</article>
-			<a href="/" title="Return to homepage">Return to homepage</a>
+			<article>
+				<h1>{{ title }}</h1>
+				{{ content | safe }}
+				<span><em>{{ date.toDateString() }}</em></span>
+				<hr />
+				<a href="/" title="Return to homepage">Return to home</a>
+			</article>
 		</main>
 		{% include './blocks/footer.njk' %}
 	</body>
