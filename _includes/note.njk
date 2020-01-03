@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	{% include './blocks/head.njk' %}
+	<body>
+		{% include './blocks/header.njk' %}
+		<main>
+			<article>{{ content | safe }}</article>
+			<a href="/" title="Return to homepage">Return to homepage</a>
+		</main>
+		{% include './blocks/footer.njk' %}
+	</body>
+</html>
