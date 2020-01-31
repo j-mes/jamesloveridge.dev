@@ -3,4 +3,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{% if title %}{{ title }} | {% endif %}{% siteName %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		:root {
+			--colour-light: #EFEFEF;
+			--colour-dark: #222222;
+			--colour-link: darkcyan;
+			--colour-link-alt: yellow;
+			--type-size: 120%;
+			--line-height: 1.9;
+		}
+
+		body {
+			background-color: var(--colour-light);
+			color: var(--colour-dark);
+			font-size: var(--type-size);
+			line-height: var(--line-height);
+			max-width: 72ch;
+			margin: auto;
+			padding: 20px;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colour-link);
+			font-weight: 600;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color: var(--colour-dark);
+				color: var(--colour-light);
+			}
+
+			a {
+				color: var(--colour-link-alt);
+			}
+		}
+	</style>
 </head>
