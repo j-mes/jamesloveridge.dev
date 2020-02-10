@@ -10,15 +10,31 @@
 			--colour-dark: #222222;
 			--colour-link: darkcyan;
 			--colour-link-alt: yellow;
-			--type-size: 120%;
+			--type-size: 100%;
+			--type-stack: 'system', sans-serif;
 			--line-height: 1.9;
 			--character-width: 72ch;
+		}
+
+		@font-face {
+			font-family: system;
+			font-style: normal;
+			font-weight: 300;
+			src:	local('.SFNSText-Light'),
+					local('.HelveticaNeueDeskInterface-Light'),
+					local('.LucidaGrandeUI'),
+					local('Ubuntu Light'),
+					local('Segoe UI Light'),
+					local('Roboto-Light'),
+					local('DroidSans'),
+					local('Tahoma');
 		}
 
 		body {
 			box-sizing: border-box;
 			background-color: var(--colour-light);
 			color: var(--colour-dark);
+			font-family: var(--type-stack);
 			font-size: var(--type-size);
 			line-height: var(--line-height);
 			max-width: var(--character-width);
