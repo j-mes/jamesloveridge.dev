@@ -1,0 +1,38 @@
+---json
+{
+	"permalink": "notes-feed.xml",
+	"eleventyExcludeFromCollections": true,
+	"metadata": {
+		"title": "James Loveridge - Weeknotes",
+		"subtitle": "A Software Engineer by day, a gamer at night",
+		"url": "https://www.jamesloveridge.dev/",
+		"feedUrl": "https://jamesloveridge.dev/notes-feed.xml",
+		"author": {
+			"name": "James Loveridge",
+			"website": "https://www.jamesloveridge.dev/"
+		}
+	}
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedUrl }}" rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
+	<id>{{ metadata.url }}</id>
+	<author>
+		<name>{{ metadata.author.name }}</name>
+	</author>
+	{%- for post in collections.notes %}
+	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | rssDate }}</updated>
+		<id>{{ absolutePostUrl }}</id>
+		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+	</entry>
+	{%- endfor %}
+</feed>

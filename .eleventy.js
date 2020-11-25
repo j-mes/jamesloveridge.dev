@@ -1,5 +1,6 @@
 const nunjucks = require('nunjucks');
 const inclusiveLanguage = require('@11ty/eleventy-plugin-inclusive-language');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 const utils = './_includes/utils';
 const blocks = './_includes/blocks';
@@ -14,6 +15,7 @@ module.exports = (config) => {
 		templateFormats: ['md'],
 		words: 'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy'
 	});
+	config.addPlugin(pluginRss);
 	config.addNunjucksShortcode('siteName', siteName);
 
 	return {
