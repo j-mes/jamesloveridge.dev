@@ -10,6 +10,8 @@ module.exports = (config) => {
 	const nunjucksEnv = new nunjucks.Environment(
 		new nunjucks.FileSystemLoader('_includes')
 	);
+
+	config.addPassthroughCopy('images');
 	config.setLibrary('njk', nunjucksEnv);
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
