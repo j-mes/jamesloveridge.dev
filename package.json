@@ -4,7 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy --formats=md,jpg,gif,png",
+    "serve": "eleventy --serve --formats=md,jpg,gif,png",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

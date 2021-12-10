@@ -1,5 +1,5 @@
 ---
-layout: archive-notes
+layout: archive-notes.njk
 title: A collection of notes
 ---
 # Notes
