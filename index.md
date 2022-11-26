@@ -2,6 +2,6 @@
 layout: home.njk
 title: Welcome
 ---
-# Hello there.
+# Hello there…
 
 ## Intermittent Notes 
