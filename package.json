@@ -4,9 +4,10 @@
 	"description": "",
 	"main": ".eleventy.js",
 	"scripts": {
-		"compile": "eleventy --formats=md,jpg,gif,png",
-		"serve": "eleventy --serve --formats=md,jpg,gif,png",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "npx eleventy",
+		"build:prod": "ELEVENTY_ENV=production npx eleventy",
+		"debug": "DEBUG=* npx eleventy",
+		"serve": "npx eleventy --serve"
 	},
 	"repository": {
 		"type": "git",
