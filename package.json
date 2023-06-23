@@ -1,32 +1,35 @@
 {
-  "name": "dotdev",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "compile": "eleventy --formats=md,jpg,gif,png",
-    "serve": "eleventy --serve --formats=md,jpg,gif,png",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/j-mes/dotdev.git"
-  },
-  "author": "James Loveridge",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/j-mes/dotdev/issues"
-  },
-  "homepage": "https://github.com/j-mes/dotdev#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "nunjucks": "^3.2.3",
-    "prettier": "^2.8.0"
-  },
-  "dependencies": {}
+	"name": "dotdev",
+	"version": "1.0.0",
+	"description": "",
+	"main": ".eleventy.js",
+	"scripts": {
+		"compile": "eleventy --formats=md,jpg,gif,png",
+		"serve": "eleventy --serve --formats=md,jpg,gif,png",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/j-mes/dotdev.git"
+	},
+	"author": "James Loveridge",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/j-mes/dotdev/issues"
+	},
+	"homepage": "https://github.com/j-mes/dotdev#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.2",
+		"@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"nunjucks": "^3.2.3",
+		"prettier": "^2.8.0"
+	},
+	"dependencies": {},
+	"volta": {
+		"node": "18.16.1"
+	}
 }
