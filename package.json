@@ -4,10 +4,10 @@
 	"description": "",
 	"main": ".eleventy.js",
 	"scripts": {
-		"build": "npx eleventy",
-		"build:prod": "ELEVENTY_ENV=production npx eleventy",
-		"debug": "DEBUG=* npx eleventy",
-		"serve": "npx eleventy --serve"
+		"build": "eleventy",
+		"build:prod": "ELEVENTY_ENV=production eleventy",
+		"debug": "DEBUG=* eleventy",
+		"serve": "eleventy --serve"
 	},
 	"repository": {
 		"type": "git",
