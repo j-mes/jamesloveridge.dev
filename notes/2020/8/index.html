@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test coverage | James Loveridge – Software Engineer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		:root {
+			--colour-light: #EFEFEF;
+			--colour-dark: #222222;
+			--colour-link: darkcyan;
+			--colour-link-alt: yellow;
+			--type-size: 100%;
+			--type-stack: 'system', sans-serif;
+			--line-height: 1.9;
+			--character-width: 72ch;
+		}
+
+		@font-face {
+			font-family: system;
+			font-style: normal;
+			font-weight: 300;
+			src:	local('.SFNSText-Light'),
+					local('.HelveticaNeueDeskInterface-Light'),
+					local('.LucidaGrandeUI'),
+					local('Ubuntu Light'),
+					local('Segoe UI Light'),
+					local('Roboto-Light'),
+					local('DroidSans'),
+					local('Tahoma');
+		}
+
+		body {
+			box-sizing: border-box;
+			background-color: var(--colour-light);
+			color: var(--colour-dark);
+			font-family: var(--type-stack);
+			font-size: var(--type-size);
+			line-height: var(--line-height);
+			max-width: var(--character-width);
+			margin: auto;
+			padding: 20px;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colour-link);
+			font-weight: 600;
+		}
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color: var(--colour-dark);
+				color: var(--colour-light);
+			}
+
+			a {
+				color: var(--colour-link-alt);
+			}
+		}
+	</style>
+</head>
+	<body>
+		<header>
+	<a href="/" title="James Loveridge – Software Engineer"><span>James Loveridge – Software Engineer</span></a>
+</header>
+		<main>
+			<article>
+				<h1>Test coverage</h1>
+				<p>For the future me…</p>
+<h2>Setting up test coverage</h2>
+<p>To start with this is really dependent on which testing framework that a project will be using. This will cover both Jest and Ava/Mocha <em>(Future me will be using non-Facebook developed testing framework for side projects and for work projects go with the flow)</em>. <a href="https://www.coveralls.io">Coveralls</a> is free for open source projects so there's no hidden pricing. The only rule is to not make it a private repository. This article will cover Coveralls with CircleCI, other continuous integration pipelines may differ.</p>
+<h3>General</h3>
+<p>Start with installing the <a href="https://github.com/nickmerwin/node-coveralls">node-coveralls</a> production package as a development dependency that's available on <a href="https://www.npmjs.org">npm</a>.</p>
+<pre><code>npm install node-coveralls --save-dev
+</code></pre>
+<p><strong>Note:</strong> This can be installed as <code>npm i -D node-coveralls</code> if using the shorthand syntax.</p>
+<p>Add a new script task like this below, or if the future me decides to do it in a different way then that's OK too!</p>
+<pre><code class="language-json">{
+	...
+	&quot;scripts&quot;: {
+		&quot;test&quot;: &quot;&lt;your test framework command&gt;&quot;,
+		&quot;test:coverage&quot;: &quot;&lt;test coverage command&gt;&quot;
+	},
+	...
+}
+</code></pre>
+<p><strong>Note:</strong> The vague commands in the <code>test</code> and <code>test:coverage</code> will be covered by the respective test frameworks below.</p>
+<h3>Ava / Mocha</h3>
+<p>To start using either <a href="https://github.com/avajs/ava">AVA</a> or <a href="https://mochajs.org/">Mocha</a>, this will need the node production package called <a href="https://www.npmjs.com/package/nyc">nyc</a> (via npm). To sum up what <code>nyc</code> does. It is a package that counts the lines in the code, and then checks for tests that will cover the lines which has been written in the code that a project may have. More information about nyc and Istanbul can be found at <a href="https://istanbul.js.org/">IstanbulJS</a>.</p>
+<ol>
+<li>Install as a devDependency in the <code>package.json</code>.</li>
+</ol>
+<pre><code>npm install nyc --save-dev
+</code></pre>
+<ol start="2">
+<li>Add the command to the <code>test:coverage</code> task inside the scripts object in the <code>package.json</code>.</li>
+</ol>
+<pre><code class="language-json">{
+	...
+	&quot;scripts&quot;: {
+		&quot;test&quot;: &quot;&lt;ava or mocha command for tests&gt;&quot;,
+		&quot;test:coverage&quot;: &quot;nyc npm test &amp;&amp; nyc report --reporter=text-lcov | coveralls&quot;
+	}
+	...
+}
+</code></pre>
+<p>What this will do is with your <code>npm test</code> script, it will run either how the project has been set up with AVA or Mocha. The coverage is run concurrently with the tests at the same time. I'd suggest adding the following lines to the <code>.gitignore</code> file:</p>
+<pre><code>.nyc_output
+coverage
+</code></pre>
+<p>So that the <code>git</code> history is kept clean of auto-generated files, and this is not really needed on the repository.</p>
+<h3>Jest</h3>
+<p>Jest comes with its own built in coverage tool, so this requires one less dependency as it will not need <code>nyc</code>. To run the coverage with Jest and to upload to Coveralls, see below:</p>
+<pre><code class="language-json">{
+	...
+	&quot;scripts&quot;: {
+		&quot;test&quot;: &quot;&lt;jest command for tests&gt;&quot;,
+		&quot;test:coverage&quot;:&quot;jest --coverage --coverageReporters=text-lcov | coveralls&quot;
+	},
+	...
+}
+</code></pre>
+<h2>Useful links</h2>
+<p>Read the documentation future me!</p>
+<ol>
+<li><a href="https://docs.coveralls.io/">Coveralls Documentation</a></li>
+<li><a href="https://circleci.com/docs/">CircleCI Documentation</a></li>
+</ol>
+<p>Until then 👋</p>
+
+				<span><em>Fri Feb 21 2020</em></span>
+				<hr />
+				<a href="/" title="Return to homepage">Return to home</a>
+			</article>
+		</main>
+		<footer>
+
+</footer>
+	</body>
+</html>

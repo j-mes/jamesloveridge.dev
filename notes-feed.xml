@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>James Loveridge - Weeknotes</title>
+	<subtitle>A Software Engineer by day, a gamer at night</subtitle>
+	<link href="https://jamesloveridge.dev/notes-feed.xml" rel="self"/>
+	<link href="https://www.jamesloveridge.dev/"/>
+	<updated>2021-12-10T00:00:00Z</updated>
+	<id>https://www.jamesloveridge.dev/</id>
+	<author>
+		<name>James Loveridge</name>
+	</author>
+	
+	<entry>
+		<title>Twenty Twenty</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/1/"/>
+		<updated>2020-01-03T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/1/</id>
+		<content type="html">&lt;p&gt;Happy New Decade everyone.&lt;/p&gt;
+&lt;h2&gt;Week notes&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been following a few people that have weeknotes (Hi &lt;a href=&quot;https://alicebartlett.co.uk/blog/weaknotes&quot;&gt;Alice&lt;/a&gt;, &lt;a href=&quot;https://daverupert.com/archive/&quot;&gt;Dave&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://paulrobertlloyd.com/notes/&quot;&gt;Paul&lt;/a&gt;) usually via a RSS reader. Yes, I&#39;m aware I don&#39;t have a RSS feed for this yet. I&#39;m incrementally adding to this site over time instead of doing it all in one go and never launching something.&lt;/p&gt;
+&lt;p&gt;So I wanted to try and start a new habit for 2020, and having a little journal that I could talk about 3 things that I&#39;ve learnt, done or wanted to talk about. So this is the first topic and yay, I&#39;ve covered one. More to follow…&lt;/p&gt;
+&lt;h2&gt;Using Eleventy&lt;/h2&gt;
+&lt;p&gt;When I started thinking about using &lt;a href=&quot;https://jamesloveridge.dev/&quot;&gt;jamesloveridge.dev&lt;/a&gt; for something, I knew I would be using &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;Eleventy&lt;/a&gt; as I&#39;ve played around with a lot of static generators in the past like Jekyll, Hexo, Hugo and so on. I was never quite happy with any of them as I couldn&#39;t use the things I wanted to use, or have more flexibility and I remember when I had a pretty nice site going with &lt;a href=&quot;https://web.archive.org/web/20160109214147/http://jamesloveridge.net/&quot;&gt;Jekyll (2016 via Web Archive)&lt;/a&gt;. It was nice to work with. Until I had to update the site to the latest Jekyll version on a different machine. That was a nightmare!&lt;/p&gt;
+&lt;p&gt;So working with Eleventy, it allows you to decide how you want to use it, and to put in what you want to use, not what you have to use based on other static generator&#39;s requirements for something to work. Eleventy is an absolute delight to work with. Yes, I don&#39;t have any styling for this site yet, and it&#39;s responsive by default. I will be adding more things to this over time starting with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RSS feed for Notes&lt;/li&gt;
+&lt;li&gt;Navigation&lt;/li&gt;
+&lt;li&gt;Basic styling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Watch this space!&lt;/p&gt;
+&lt;h2&gt;Star Wars Jedi: Fallen Order&lt;/h2&gt;
+&lt;p&gt;As over Christmas, there&#39;s a lot of spare time, I have found that this &lt;a href=&quot;https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/&quot;&gt;game&lt;/a&gt; on Steam is quite excellent, and does not have any micro-transactions or anything that would resemble of a modern game of late that would utterly ruin the experience. I&#39;m completely hooked on this, and am playing it incrementally so that I don&#39;t finish it too quickly. I wonder if that&#39;s because I&#39;m enjoying the game more by having set up a nVIDIA SHIELD TV to be plugged into my TV in the living room, and streaming from my gaming PC which is in a different room. Also having a sofa to sit on, instead of a desk chair and playing away with a wireless controller.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a short gist of the game:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Play as a Jedi with a lightsaber, using the Force.&lt;/li&gt;
+&lt;li&gt;Have a personal droid.&lt;/li&gt;
+&lt;li&gt;Progress through the game, defeating the Empire baddies.&lt;/li&gt;
+&lt;li&gt;It has awesome subtitles.&lt;/li&gt;
+&lt;li&gt;Did I mention no crappy micro-transactions?!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I wonder if I will actually complete the game completely, with all unlockables, chests, and secrets discovered? Time will tell I guess. 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Alternatives to Facebook developed libraries</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/2/"/>
+		<updated>2020-01-10T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/2/</id>
+		<content type="html">&lt;p&gt;Having spent the majority of my first full week at work… being sick. Such a good start to 2020. Yay.&lt;/p&gt;
+&lt;h2&gt;Alternatives&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been trying to find something like &lt;a href=&quot;https://nomoregoogle.com/&quot;&gt;No More Google&lt;/a&gt; for Facebook. This site is a nice list of alternatives that shows you what you could do without relying on Google completely. Also helps you to rein in control for your data and privacy on the Internet. I&#39;ve been using &lt;a href=&quot;https://duckduckgo.com/&quot;&gt;DuckDuckGo&lt;/a&gt; for years and find it much nicer to use when searching for things knowing that it will not be using my search history (which will be full of memes and JavaScript) to monetise by selling that data to advertisers.&lt;/p&gt;
+&lt;p&gt;With Facebook, they have done some nice work in the open source community like &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt;, &lt;a href=&quot;https://jestjs.io/&quot;&gt;Jest&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://yarnpkg.com/lang/en/&quot;&gt;Yarn&lt;/a&gt;. Sometimes I feel that if I use any of those mentioned, I&#39;m actually saying that whatever Facebook does with people&#39;s data/privacy rights is totally OK. That really makes me feel uneasy. So a few alternatives to those are:&lt;/p&gt;
+&lt;h3&gt;React&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://svelte.dev/&quot;&gt;Svelte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://preactjs.com/&quot;&gt;Preact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Jest&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/avajs/ava&quot;&gt;AVA&lt;/a&gt; - &lt;em&gt;More on this at a later date - It has piqued my interest&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://mochajs.org/&quot;&gt;Mocha&lt;/a&gt; - &lt;em&gt;Mocha recently released 7.0!!!&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Yarn&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; - &lt;em&gt;Comes as default with Node anyhow&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, let me know if you see any alternatives that I&#39;ve missed out on, or if there&#39;s a similar site that tells you what Facebook alternatives there is. I&#39;m sure there is one and I couldn&#39;t find it myself. 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How warm is January?</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/3/"/>
+		<updated>2020-01-17T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/3/</id>
+		<content type="html">&lt;h2&gt;January (so far)&lt;/h2&gt;
+&lt;p&gt;I don&#39;t think I&#39;ve ever come across a January where it&#39;s been this warm. I&#39;m not even taking along a scarf, gloves and a hat to muddle through when going outside from home. It really does make me think about climate change, and how I could be more responsible for my own carbon footprint. Going to work by train reduces my carbon footprint a lot more than if I went by car. I wouldn&#39;t go to work by car, as it&#39;s in the City of London, the parking fees would be atrocious, not to mention the goddamned traffic. I have thought about entertaining the option of going full time flexitarian to do my bit for the planet. I&#39;m currently struggling of what would allow for occasional eating of meat? How often could this happen? It&#39;s something to ponder about along with the 1000 things I&#39;m already thinking about!&lt;/p&gt;
+&lt;h2&gt;His Dark Materials - The Subtle Knife&lt;/h2&gt;
+&lt;p&gt;I&#39;m currently going through the 2nd book &#39;The Subtle Knife&#39; on the commute. This makes for a nice change than the usual reads that I go through. I had read the first book years ago, watched the film (which was not great) and enjoyed the TV (BBC) iteration immensely. I thought that was nicely done, and had the right amount of darkness to it. Anyway, onto the book. This has taken a new direction, and it&#39;s quite pleasant. The characters that I&#39;ve been reading along with so far, have explored a few worlds with some differences. It&#39;s fascinating and I do not want to spoil the book if you stumble across this post somehow, even though I&#39;ve not advertised the site at all. No analytics, no SEO, no crap like that. 😀&lt;/p&gt;
+&lt;h2&gt;YouGotThis&lt;/h2&gt;
+&lt;p&gt;I&#39;m particularly interested in seeing the talks in this &lt;a href=&quot;https://2020.yougotthis.io/&quot;&gt;conference&lt;/a&gt; which I am going to tomorrow. As one of the main goals for me, in this fresh new year is to go up another level as a Software Engineer. I wonder if some of the talks will provide me with an insight of what I could do to facilitate that possibility at the Financial Times. Time will tell! 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>WTF January and Dungeons &amp; Dragons!</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/4/"/>
+		<updated>2020-01-27T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/4/</id>
+		<content type="html">&lt;h2&gt;Retrospective of YouGotThis&lt;/h2&gt;
+&lt;p&gt;As the weekend before last (18th January) I travelled up to Birmingham at a really early time, I was really not used to getting up at 6am on a Saturday. I went to the conference &lt;a href=&quot;https://2020.yougotthis.io/&quot;&gt;YouGotThis&lt;/a&gt;. I&#39;m glad I went, there were excellent talks that was delivered at this conference.&lt;/p&gt;
+&lt;p&gt;Melinda Seckington delivered a really &lt;a href=&quot;https://speakerdeck.com/mseckington/level-up-developing-developers&quot;&gt;well thought out talk&lt;/a&gt; of how they progress people at &lt;a href=&quot;https://www.futurelearn.com/&quot;&gt;FutureLearn&lt;/a&gt;, it is not dissimilar to how the &lt;a href=&quot;https://www.ft.com/&quot;&gt;FT&lt;/a&gt; does this with the &lt;a href=&quot;https://engineering-progression.ft.com/&quot;&gt;engineering progression&lt;/a&gt;, albeit in a different way. I really liked how she used video games as an analogy, especially with how people can progress in the video game, with &#39;levelling up&#39; and gaining &#39;abilities&#39;. Also how it trains you to do a particular ability. Melinda also showed a few video games that I should consider trying out once they are on sale on Steam!&lt;/p&gt;
+&lt;p&gt;I found Dan Parkes&#39; &lt;a href=&quot;https://speakerdeck.com/dancparkes/unions-got-this-number-yougotthisconf-2020&quot;&gt;talk&lt;/a&gt; to be quite interesting, which covered organising and being in an union (see &lt;a href=&quot;https://techworkerscoalition.org/london/&quot;&gt;Tech Workers Coalition&lt;/a&gt;) to better protect your rights whilst being employed. While Dan delivered the talk, there was a particular link that really stood out. It is a &lt;a href=&quot;https://www.youtube.com/watch?v=VPIw-REVbBY&quot;&gt;YouTube video (People Make Games)&lt;/a&gt; of how Blizzard Entertainment is trying to fire 134 employees from Paris, so that they can relocate the jobs to be in Ireland and effectively pay them less for the same responsibilities. This made me pause for a thought because I&#39;ve grew up playing a lot of Blizzard games, and makes me think about how much the company and its games has changed since it got bought/taken over by Activision. Maybe it&#39;s time to not buy the future new Blizzard video games that will be launched in the near time like the new upcoming World of Warcraft expansion - Shadowlands, Overwatch 2 or Diablo 4. I&#39;ll miss Diablo a lot more though, but there&#39;s other game publishers that treat their staff better that could be worth buying video games from.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, I mentioned that it was a warm January in the previous weeknote. It was not!!! It was freezing on Saturday 18th and really cold for a few days after!&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Dungeons &amp;amp; Dragons&lt;/h2&gt;
+&lt;p&gt;Dungeons &amp;amp; Dragons. The fantasy table-top game where players craft a world with characters and battle monsters. I&#39;ve always been curious about how this plays out, especially with a deaf person. Possibly like any other board game with hearing people, conversations would be completely lost as I would not be able to keep up. So when &lt;a href=&quot;https://www.rowanmanning.com/&quot;&gt;Rowan&lt;/a&gt; asked if I wanted to play D&amp;amp;D with a twist, as the game would be exclusively on Discord text channels (Not the voice channels for you noiseholes!). I immediately took that opportunity as I really wanted to try this out and it would be fun trying something new.&lt;/p&gt;
+&lt;p&gt;So a few weeks ago we started a campaign, I had to write a backstory, and to write an introduction to the group (Dungeon Master and players) that I would be playing a D&amp;amp;D campaign with. It looked like this, and I&#39;m quite proud of the movie pun that I sneaked in...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My name is Otto, a former gladiator and now a soldier aboard Jofur&#39;s Glory. I was taken away from my family and the village where I lived when I was young by Githyanki raiders. Son to murdered parents, brother to murdered sisters and brothers, and I took my vengeance in this life against my captors, during the failed capture of Jofur&#39;s Glory for parts. Captain Mori offered me the opportunity to stay on the ship as a soldier, and I gladly took it as I had nothing to go back to, and that was a year ago.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To put this mildly, in this D&amp;amp;D game, I am a half-Orc fighter called Otto (&lt;a href=&quot;https://www.dndbeyond.com/profile/Ottotron/characters/16057200&quot;&gt;D&amp;amp;D Beyond&lt;/a&gt;). We are currently on a mission to mine some spices for Jofur&#39;s Glory to have, as we are low on that particular spice (and it&#39;s really rare apparently). We recently went through a combat situation, where it felt like we were actually there. It felt stressful in a good way as it made it more immersive, and I don&#39;t think this would&#39;ve happened in a real life situation where hearing people would be talking to each other and I&#39;d be missing out all the details as I wouldn&#39;t be able to keep up.&lt;/p&gt;
+&lt;p&gt;So this is a thank you part to Rowan for setting this up, and for the others to follow up on in this current adventure! 👋&lt;/p&gt;
+&lt;h2&gt;Footnote&lt;/h2&gt;
+&lt;p&gt;This weeknote is a few days late, as I had Friday off from work and chose to not use a computer all day, any other time I would&#39;ve put this up on a Friday.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Readability, Twitter &amp; Warcraft 3 Reforged</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/5/"/>
+		<updated>2020-01-31T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/5/</id>
+		<content type="html">&lt;h2&gt;Readability&lt;/h2&gt;
+&lt;p&gt;To start with, this &lt;a href=&quot;https://twitter.com/swyx/status/1222768044767727619&quot;&gt;tweet&lt;/a&gt; by swyx on having a maximum number of characters per line. He has explored a few pretty websites that had considered the content width. It came to me via an account that I follow, having &#39;Liked&#39; the tweet. (More on that later). It made me think about this site where I am aiming to do weekly brain dumps on. It&#39;s definitely not doing a nice number of characters per line since it&#39;s largely unstyled. This is intentional, the experience of that might not be nice for anyone. So I decided to add in &lt;code&gt;max-width: 72ch;&lt;/code&gt; on the body tag of the site.&lt;/p&gt;
+&lt;p&gt;It looked great, then I realised I should really put the content in the centre it so that it becomes like a book when a visitor reads my weekly brain dumps. I also went a step further and added in dark mode, mostly because I prefer reading things that uses a dark background. It&#39;s much easier on my eyes for sure. Let me know what you think if you do read this… I can be contacted on Twitter under &lt;a href=&quot;https://twitter.com/j_mes&quot;&gt;j_mes&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;State of Twitter&lt;/h2&gt;
+&lt;p&gt;Now onto Twitter, I&#39;ve been using the desktop version in a pinned tab for months now, and prefer it like that so I can consume content from Twitter when it suits me, and without notifications. Lately I&#39;ve been noticing a lot more posts that are not relevant to me, or from people that I follow and quite a few of them were sponsored posts too. This was not pleasant, and I then came across this &lt;a href=&quot;https://gist.github.com/IanColdwater/88b3341a7c4c0cf71c73ac56f9bd36ec&quot;&gt;gem of a gist&lt;/a&gt; that helps you to filter those out by muting certain words. This works like a charm. No more sponsored tweets, thank you very much Twitter for incorporating something that effectively blocks out another piece of functionality that got put in to generate revenue for yourselves.&lt;/p&gt;
+&lt;p&gt;Another little nitpick is having people that you follow, seeing their &#39;Likes&#39; of tweets that you may not care much about. The only way to get rid of those is using Twitter&#39;s own algorithm with &#39;See less of those tweets&#39; on the &#39;Likes&#39; posts on the feed. I&#39;ve done a few and I hope it&#39;ll clean it up and let me see more of &lt;a href=&quot;https://twitter.com/simonleggsays&quot;&gt;Simon&lt;/a&gt;&#39;s tweets instead!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;P.S. Simon, &lt;a href=&quot;https://www.bonnemaman.co.uk/products/conserves/rhubarb-and-strawberry-conserve&quot;&gt;Rhubarb &amp;amp; Strawberry conserve&lt;/a&gt;. Try it. You&#39;ll be amazed. And no, it&#39;s not celery. Celery is gross.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Warcraft 3 Reforged&lt;/h2&gt;
+&lt;p&gt;Going all the way back to the year of 2002. &lt;a href=&quot;https://en.wikipedia.org/wiki/Warcraft_III:_Reign_of_Chaos&quot;&gt;Warcraft 3: Reign of Chaos&lt;/a&gt; has been released. I had grown up playing Warcraft II on a family computer that had a 133MHz processor, 32 megabytes of RAM and a 3 gigabyte hard drive with Voodoo 1 graphics card. Yes the first Voodoo graphics card, it was amazingly fast playing Warcraft II and Grand Theft Auto at 13 years old 😂. I loved playing on it, and later on when I got my first computer. A computer to call my own, not one that I would share with the family, so that I wouldn&#39;t have to share the time with my sister, and could play a lot more video games!&lt;/p&gt;
+&lt;p&gt;Warcraft 3 and Quake 3 was the games that I would play a lot over the years before I went to university. So when Blizzard announced over a year ago they would remaster Warcraft 3, I was really excited and immediately pre-ordered it. Fast forward to today. The game is now out, and one big part of what Warcraft 3 was for me, is the ability to play custom games that was made by the community, and that included Dota. When Dota really took off a long time ago, Blizzard didn&#39;t make any money out of it because it was not their property even though it used the game.&lt;/p&gt;
+&lt;p&gt;Reading Polygon&#39;s &lt;a href=&quot;https://www.polygon.com/2020/1/29/21113975/warcraft-3-reforged-downgrade-launch-issues-fan-response-cutscenes-performance-custom-games-dota&quot;&gt;&#39;Warcraft 3: Reforged changes how the original game works, and fans are upset&#39;&lt;/a&gt; article. This hardly surprises me, because Blizzard as a company has really changed since &lt;a href=&quot;https://en.wikipedia.org/wiki/Activision_Blizzard&quot;&gt;Activision&lt;/a&gt; took over the company, and a lot of employees that believed in Blizzard and upheld it&#39;s values were leaving &lt;a href=&quot;https://www.engadget.com/2013/11/27/ghostcrawler-to-leave-blizzard-entertainment/&quot;&gt;then&lt;/a&gt;, &lt;a href=&quot;https://screenrant.com/blizzard-co-founder-leaves-company-three-decades/&quot;&gt;there&lt;/a&gt; and &lt;a href=&quot;https://www.thegamer.com/blizzards-staff-still-unhappy-high-profile-employees-leaving/&quot;&gt;over there&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since I have the game already, it might be possible that this is the last Blizzard game that I will have bought. I hope the community still creates their custom maps/mods even though they will not make money from it as Blizzard changed the terms and that if anything is created with their editor, is automatically the property of Blizzard and they, themselves will earn all the profits from someone that has spent the time to create the custom maps/mods.&lt;/p&gt;
+&lt;p&gt;I am delaying myself from playing the game, because I stumbled across a &lt;a href=&quot;https://twitter.com/PiratessUnluck/status/1221563113419395072&quot;&gt;tweet&lt;/a&gt;. This gamer with a 49&amp;quot; monitor playing Stardew Valley. I would love to play games on an ultra-wide monitor now. So, I&#39;m making the conscious decision to not play Warcraft 3 Reforged until I have an ultra-wide monitor. Gaming for me is all about the visual aspects, as like how people would spend hundreds of pounds on headphones when I don&#39;t understand why, because I&#39;m deaf. The same could apply for me spending a significant amount of money on a monitor to an outsider.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Yes I bought Stardew Valley on Steam for my niece to play in advance of getting an ultra-wide monitor)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>BSL, clay pigeon shooting &amp; adulting</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/6/"/>
+		<updated>2020-02-07T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/6/</id>
+		<content type="html">&lt;p&gt;Hello February! It&#39;s a chilly start, with fogs forming almost most of every morning so far when I&#39;ve gotten up and dragged myself out from the warm bed.&lt;/p&gt;
+&lt;h2&gt;British Sign Language&lt;/h2&gt;
+&lt;p&gt;On Saturday 1st February, I went clay pigeon shooting with my dad and a friend Ben &lt;em&gt;(spoiler alert - I won)&lt;/em&gt;. I was using the money from the culture award that I won at work, for helping &lt;a href=&quot;https://twitter.com/_magspie&quot;&gt;Maggie Allen&lt;/a&gt; run British Sign Language taster sessions. We have helped a lot of people learn the basics of the British Sign Language.&lt;/p&gt;
+&lt;p&gt;What makes the &lt;a href=&quot;https://www.ft.com/&quot;&gt;FT&lt;/a&gt; really inclusive, is the people. They are always willing and are open minded enough to try new things that are outside of their comfort zone. I don&#39;t think I&#39;ve ever experienced that anywhere else, and I feel very fortunate to work at a company that encourages staff to do so. In some cases they thrive and progress in their careers quicker as a result. I&#39;m looking forward to seeing more new faces for the taster sessions this year.&lt;/p&gt;
+&lt;h2&gt;Clay pigeon shooting&lt;/h2&gt;
+&lt;p&gt;Since I was 13, I&#39;ve been super lucky that my dad would take me clay pigeon shooting, and show the patience and guidance to show me how to shoot. Fast forward a few years of shooting every now and then. For a birthday a few years ago, I brought all of my mates, and some of the family. Feeling reasonably confident that I would come first, and ended up rock bottom. I was completely sideswiped by this, and it did dent my confidence a bit.&lt;/p&gt;
+&lt;p&gt;After a little chat with the old boy &lt;a href=&quot;https://www.youtube.com/watch?v=eTK0IPLhImw&quot;&gt;Doug Florent&lt;/a&gt; that owns &lt;a href=&quot;https://www.oxfordguncompany.co.uk/&quot;&gt;Oxford Gun Company&lt;/a&gt;. He gave me some pieces of advice on how to hold the gun, and so on. Going from 60% accuracy to near 70% was amazing in itself. Having a right fitted gun (even if its a hired one) is another one. I had an ill-fitted shotgun on Saturday, and it wasn&#39;t really pleasant to deal with. It really makes me think about getting my own and to have the right fit, and try and push above 70% accuracy and see if I can even get 50/50 (this is really difficult to achieve) on a Sporting day to be in for a chance to win a prize. I &lt;em&gt;only&lt;/em&gt; managed to get 56% this time around, which was not great, as the previous visits had me at 65%.&lt;/p&gt;
+&lt;h2&gt;I&#39;m shit at being an adult™️&lt;/h2&gt;
+&lt;p&gt;I finally got around to having a new sofa and armchair for the living room. It looks great, and is comfortable. Now to do the rest of the house, and make sure I have enough tea bags, milk, biscuits for visitors that will come tomorrow. Oh and tidy up the rest of the house before they come. &lt;em&gt;Fuck&lt;/em&gt;. I reckon I can smash it all out of the park if I get up really early on Saturday morning right? We shall see 😂&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Test coverage</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/8/"/>
+		<updated>2020-02-21T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/8/</id>
+		<content type="html">&lt;p&gt;For the future me…&lt;/p&gt;
+&lt;h2&gt;Setting up test coverage&lt;/h2&gt;
+&lt;p&gt;To start with this is really dependent on which testing framework that a project will be using. This will cover both Jest and Ava/Mocha &lt;em&gt;(Future me will be using non-Facebook developed testing framework for side projects and for work projects go with the flow)&lt;/em&gt;. &lt;a href=&quot;https://www.coveralls.io/&quot;&gt;Coveralls&lt;/a&gt; is free for open source projects so there&#39;s no hidden pricing. The only rule is to not make it a private repository. This article will cover Coveralls with CircleCI, other continuous integration pipelines may differ.&lt;/p&gt;
+&lt;h3&gt;General&lt;/h3&gt;
+&lt;p&gt;Start with installing the &lt;a href=&quot;https://github.com/nickmerwin/node-coveralls&quot;&gt;node-coveralls&lt;/a&gt; production package as a development dependency that&#39;s available on &lt;a href=&quot;https://www.npmjs.org/&quot;&gt;npm&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install node-coveralls --save-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This can be installed as &lt;code&gt;npm i -D node-coveralls&lt;/code&gt; if using the shorthand syntax.&lt;/p&gt;
+&lt;p&gt;Add a new script task like this below, or if the future me decides to do it in a different way then that&#39;s OK too!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+	...
+	&amp;quot;scripts&amp;quot;: {
+		&amp;quot;test&amp;quot;: &amp;quot;&amp;lt;your test framework command&amp;gt;&amp;quot;,
+		&amp;quot;test:coverage&amp;quot;: &amp;quot;&amp;lt;test coverage command&amp;gt;&amp;quot;
+	},
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The vague commands in the &lt;code&gt;test&lt;/code&gt; and &lt;code&gt;test:coverage&lt;/code&gt; will be covered by the respective test frameworks below.&lt;/p&gt;
+&lt;h3&gt;Ava / Mocha&lt;/h3&gt;
+&lt;p&gt;To start using either &lt;a href=&quot;https://github.com/avajs/ava&quot;&gt;AVA&lt;/a&gt; or &lt;a href=&quot;https://mochajs.org/&quot;&gt;Mocha&lt;/a&gt;, this will need the node production package called &lt;a href=&quot;https://www.npmjs.com/package/nyc&quot;&gt;nyc&lt;/a&gt; (via npm). To sum up what &lt;code&gt;nyc&lt;/code&gt; does. It is a package that counts the lines in the code, and then checks for tests that will cover the lines which has been written in the code that a project may have. More information about nyc and Istanbul can be found at &lt;a href=&quot;https://istanbul.js.org/&quot;&gt;IstanbulJS&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install as a devDependency in the &lt;code&gt;package.json&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;npm install nyc --save-dev
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Add the command to the &lt;code&gt;test:coverage&lt;/code&gt; task inside the scripts object in the &lt;code&gt;package.json&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+	...
+	&amp;quot;scripts&amp;quot;: {
+		&amp;quot;test&amp;quot;: &amp;quot;&amp;lt;ava or mocha command for tests&amp;gt;&amp;quot;,
+		&amp;quot;test:coverage&amp;quot;: &amp;quot;nyc npm test &amp;amp;&amp;amp; nyc report --reporter=text-lcov | coveralls&amp;quot;
+	}
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;What this will do is with your &lt;code&gt;npm test&lt;/code&gt; script, it will run either how the project has been set up with AVA or Mocha. The coverage is run concurrently with the tests at the same time. I&#39;d suggest adding the following lines to the &lt;code&gt;.gitignore&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.nyc_output
+coverage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So that the &lt;code&gt;git&lt;/code&gt; history is kept clean of auto-generated files, and this is not really needed on the repository.&lt;/p&gt;
+&lt;h3&gt;Jest&lt;/h3&gt;
+&lt;p&gt;Jest comes with its own built in coverage tool, so this requires one less dependency as it will not need &lt;code&gt;nyc&lt;/code&gt;. To run the coverage with Jest and to upload to Coveralls, see below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-json&quot;&gt;{
+	...
+	&amp;quot;scripts&amp;quot;: {
+		&amp;quot;test&amp;quot;: &amp;quot;&amp;lt;jest command for tests&amp;gt;&amp;quot;,
+		&amp;quot;test:coverage&amp;quot;:&amp;quot;jest --coverage --coverageReporters=text-lcov | coveralls&amp;quot;
+	},
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Useful links&lt;/h2&gt;
+&lt;p&gt;Read the documentation future me!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.coveralls.io/&quot;&gt;Coveralls Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://circleci.com/docs/&quot;&gt;CircleCI Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Managing things are hard &amp; coronavirus</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/9/"/>
+		<updated>2020-02-28T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/9/</id>
+		<content type="html">&lt;h2&gt;Managing people&#39;s expectations&lt;/h2&gt;
+&lt;p&gt;As a Junior Engineer at the &lt;a href=&quot;https://www.ft.com/&quot;&gt;FT&lt;/a&gt;, I&#39;m very fortunate to be able to lead a project or two at this level. It shows the trust that the FT places in everyone regardless of their position in the hierarchy. In my own view, this is a fantastic way of helping people to level up, in their own skills, competencies and to provide learning opportunities in areas that they are not familiar with.&lt;/p&gt;
+&lt;p&gt;One of those key things that I have learnt this week is that it is perfectly fine to say no to the stakeholders regarding a query &lt;em&gt;(Note: I hate saying no to anyone and would rather try and find a solution or a compromise)&lt;/em&gt; for a project that I&#39;m tech leading in. This project that I am involved in is super exciting and I can&#39;t wait to share this with the company when it goes live, as I have absolute faith in the engineers involved in the project that we will deliver something that will be crafted quite beautifully and fulfil everything that the stakeholders needs from the project.&lt;/p&gt;
+&lt;h2&gt;Coronavirus&lt;/h2&gt;
+&lt;p&gt;One of the things that continue to surprise me with the relentless coverage by the media on Coronavirus when Influenza has killed more people in the last 6 months than Coronavirus has? Is this due to the media trying to whip up a frenzy to cause a panic over the coronavirus pandemic in order to get more people to buy papers or to have more &#39;hits&#39; online?&lt;/p&gt;
+&lt;p&gt;I continue to try and keep good hygiene by washing my hands regularly, and while on the commute try and not touch anything especially on the Tube. Once arriving at work, continue to wash hands and so on. In a place like the City of London, it is only a matter of time before companies start ordering staff to work from home to prevent infection or to self-isolate if infected.&lt;/p&gt;
+&lt;p&gt;I wonder if I&#39;d be ordered to work from home for a little while, this would be an interesting concept to deal with since I had not worked for home for more than 2 weeks since my last knee surgery and before that, it would be for freelance work and I stopped doing that because it was really isolating and I find it&#39;s easier to work in a team than on my own sometimes. I do find working from home 2 days a week to be helpful and to help with focus as well. Having too much work from home days could be counter-productive? Time will tell.&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>25+13 &amp; 5½</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/10/"/>
+		<updated>2020-03-06T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/10/</id>
+		<content type="html">&lt;p&gt;Yesterday I added another year&#39;s experience of being 25 with a mental age of 5½. So this is bit of a reflective note this week based on the last five years that I&#39;ve been doing professionally.&lt;/p&gt;
+&lt;p&gt;To start with, 5 years ago, I was predominantly a front end developer, and to an extent, only specialised in doing HTML and CSS (eventually with Sass as well). I was really adamant that I would not do any JavaScript as I believed in that a lot of things could be achieved with HTML/CSS on its own or with a CMS like WordPress or others. That kind of mindset is admirable even today, I can see that there were drawbacks to that approach. Deciding early on that JavaScript was not a good thing to learn was possibly not a great move on my behalf.&lt;/p&gt;
+&lt;p&gt;After completing the Masters&#39; at University of Greenwich, I learnt the value of networking with people in the same industry as me. This was massively valuable as after following a few developers, I came across a retweet which showed me a job opportunity at the Financial Times. It was an internship position, and I felt it was a good opportunity and that I could use that opportunity to learn from other developers, as apart from the Masters&#39; I had not a lot of opportunities to work with other developers. This would allow me to learn from them outside of reading about their experiences when they wrote about it online.&lt;/p&gt;
+&lt;p&gt;Working in the Origami team at the FT for 3 months, was massively invaluable to me. I &lt;em&gt;learnt&lt;/em&gt; a lot, and will always be grateful to the developers in Origami at the time. I was exposed to what was considered to be the way of doing things, and experimenting with things were not frowned upon, but encouraged as it would provide a learning experience. As the short-term contract ended, I went to a web agency where I would learn a lot about WordPress, client and time management. There were a lot of lessons learnt at this job, and I&#39;m grateful for those lessons as well. I feel that I&#39;m more well rounded as a front end developer at the end of my time there.&lt;/p&gt;
+&lt;p&gt;Fast forward 2 years later, I was given the opportunity to work at the FT again, but as a permanent employee, and I feel it is the place where I have found myself growing as a person and as a professional the most for the last year and half. Following a recent discussion with a principal engineer who also is a mentor to me, she has pointed out that if I looked back to day 1 of the job and to now, I&#39;d realise that I&#39;ve grown exponentially in a lot of areas, I will always be grateful to all of the Internal Products folks for allowing me this opportunity and to grow as a person as well.&lt;/p&gt;
+&lt;p&gt;The biggest gotcha for me in the last 5 years is this… how much I love working with JavaScript daily compared to back in 2015! Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>WFH for an undetermined amount of time</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/11/"/>
+		<updated>2020-03-13T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/11/</id>
+		<content type="html">&lt;p&gt;So, the coronavirus outbreak is now officially a pandemic. The &lt;a href=&quot;https://www.ft.com/&quot;&gt;FT&lt;/a&gt; has decided that it would be better for the staff to start working from home and to not come into the office at all. I was massively impressed at how the company has approached this in a very proactive way. Staff with their health (physical and mental) is considered high up the agenda.&lt;/p&gt;
+&lt;h2&gt;Good habits to adhere to while working from home&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Do schedule breaks in the calendar. It is quite easy to get self-absorbed into work and forget having mental, hydration or even toilet breaks!&lt;/li&gt;
+&lt;li&gt;Try and keep a routine similar to how it would be if you were going to the office.
+&lt;ul&gt;
+&lt;li&gt;I regularly get coffee near work, so keep doing this but with the nearest café.&lt;/li&gt;
+&lt;li&gt;Take a walk at lunch time.&lt;/li&gt;
+&lt;li&gt;Schedule face-time with colleagues and turn on webcams and talk away. Ask about everything so that it becomes more inclusive and not isolating.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Do regular exercise without the need of using facilities like the gym.&lt;/li&gt;
+&lt;li&gt;If your work uses a chat/collaboration tool, consider setting your status the working hours so that a clear boundary is set.&lt;/li&gt;
+&lt;li&gt;Lastly, don&#39;t work in your pyjamas! 😂&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have a feeling that this will turn into months, not weeks until the world has gotten this under control, and I&#39;m very confident that we will get to that point at some undetermined time. It makes me realise how fragile life really is, and how we should cherish it with every passing moment, detail and experience.&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Lack of updates &amp; DAW</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/19/"/>
+		<updated>2020-05-08T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/19/</id>
+		<content type="html">&lt;p&gt;Well, for a number of weeks I haven&#39;t really felt like documenting or writing week notes. The massive life shift with the pandemic has been a challenge to adapt to, and unfortunately my weeknotes fell by the side. The FT has made the &lt;a href=&quot;https://www.ft.com/coronavirus-latest&quot;&gt;&#39;Coronavirus tracked: the latest figures as the pandemic spreads&#39;&lt;/a&gt; article free for anyone to read and consume, and it is regularly up to date. I hope to not write anything more further about coronavirus in the weeknotes from now.&lt;/p&gt;
+&lt;h2&gt;Deaf Awareness Week&lt;/h2&gt;
+&lt;p&gt;Last week I published two Medium posts for Deaf Awareness Week (4th-10th May 2020) and was interviewed by Product &amp;amp; Technology&#39;s Talent Acquisition team for the &#39;Future Leaders&#39; series which people get invited to interview to cover a person&#39;s perspective, and how they got into technology in the first place.&lt;/p&gt;
+&lt;p&gt;So, without further ado, here&#39;s the links to the articles!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/ft-product-technology/future-leaders-james-loveridge-engineer-a5cd65feb087&quot;&gt;Future Leaders: James Loveridge, Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/ft-product-technology/helping-people-learn-sign-language-at-work-79d8e0336aa8&quot;&gt;Helping people learn sign language at work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/ft-product-technology/communication-tips-with-deaf-people-at-work-fd7b172e0e1c&quot;&gt;Communication tips with Deaf people at work&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Future weeknotes&lt;/h2&gt;
+&lt;p&gt;The next few weeknotes will be more of an explanatory of the learning journey I undergo with AWS (Amazon Web Services) for work. I hope to make it a version of a glossary that could be explained to a five year old, and would be useful for future me as well.&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>December is here!</title>
+		<link href="https://www.jamesloveridge.dev/notes/2020/49/"/>
+		<updated>2020-12-04T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2020/49/</id>
+		<content type="html">&lt;h2&gt;Hello old friend, the weeknotes.&lt;/h2&gt;
+&lt;p&gt;I&#39;m very much aware that I have not shared anything since May 2020. I&#39;ve been inspired lately largely thanks to reading other colleagues&#39; weeknotes. I&#39;ll be adopting the structure that the others have been using in their weeknotes by using bulletpoints.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I&#39;m amazed at Matt Hinchliffe&#39;s &lt;a href=&quot;https://notes.matthinchliffe.dev/&quot;&gt;weeknotes&lt;/a&gt;. It really does remind me of how the Internet was in the nineties. Where&#39;s the Geocities Web Ring links Matt?! Or was that another site that did them? 🤔&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I absolute love the sarcasm and the writing style of &lt;a href=&quot;https://leemoody.co.uk/&quot;&gt;Lee Moody&lt;/a&gt;. I really like how it starts with &amp;quot;Reader,&amp;quot; then sets the tone as a conversation. It feels like it&#39;s breaking out of the perspective and talking to the audience directly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&#39;m quite happy that Rowan Manning is doing &lt;a href=&quot;https://rowanmanning.com/weeknotes/&quot;&gt;weeknotes&lt;/a&gt; as well, and that I look forward to reading them every week on my RSS reader. I have read somewhere there&#39;s a RSS feed in the works by Rowan which I&#39;m sure will be absolutely brilliant, and enable me to bin Feedly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is truly the sci-fi season, we have the Mandalorian season 2, Star Trek Discovery season 3 and in 2 weeks, The Expanse&#39;s 5th season! It&#39;s all so amazing! I want to binge-watch them all but I find the weekly drip-drip to be more exciting than binge watching in one whole weekend now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I built a new gaming PC a few weeks ago, and the computer case that I chose, is actually a fire hazard. Greeeaaaat. I&#39;m going to have to take precautions now, and if it catches fire, I guess I can turn off the heating since it&#39;ll be free heating right?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I find that video games is a good escape from what things are like these days, with the current pandemic, or with the lockdown mess that the Government keeps doing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I now know of four work people that have bought a Nintendo Switch. I&#39;m really looking forward to playing MarioKart with them online soon. I always pick Luigi, as he suits my playstyle in the game but it also does help that he does &lt;a href=&quot;https://media.giphy.com/media/8ffFG6Bq2f7tS/giphy.gif&quot;&gt;this&lt;/a&gt;. 😂&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The new World of Warcraft &#39;Shadowlands&#39; expansion got released a few weeks ago, and that came with its&#39; own problems during the launch. Reading Twitter, Reddit and other sources showed the frustration of people trying to log into the servers to start consuming the content.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I was surprised that I had quite a lot of empathy for the game devs/network staff having to fix the problems as they came up with the WoW expansion launch. I wonder if it&#39;s because it did draw some parallels to work when releasing new things. I think if I was responsible for such an important launch, I&#39;d turn off all social media so I wouldn&#39;t see rage memes like &#39;smol indie company&#39;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Putting aside with the launch issues of Shadowlands, the content so far is quite interesting and I can safely say Revendreth is my favourite zone to run around in, it gives major vibes of Dracula, vampirism and so on. I&#39;m not really a person that buys into all of the lore surrounding vampirism, but I liked how Blizzard have approached this in Revendreth.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&#39;m also pleasantly surprised that by picking an Unholy Death Knight to go though the content is now considered to be &lt;a href=&quot;https://simulationcraft.org/reports/PR_Raid.html&quot;&gt;FOTM&lt;/a&gt; (Flavour of the Month). This comes with some advantages but also some disadvantages as the FOTM rerollers jump on the bandwagon and then Blizzard will be looking to lessen the impact that Unholy DKs can bring to bring it back in line with the other classes. Boo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope to try and keep up with the weeknotes for December, and it might not really revolve around work that much as I&#39;m off work from 11th December. Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Jess</title>
+		<link href="https://www.jamesloveridge.dev/notes/2021/49/"/>
+		<updated>2021-12-10T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2021/49/</id>
+		<content type="html">&lt;h2&gt;A letter to Jess&lt;/h2&gt;
+&lt;p&gt;The day we got you from a dog fostering family (with Dogs&#39; Trust) in the summer of 2008, was a day that I and dad didn&#39;t realise how much of an impact you would have on the family for more than a decade.&lt;/p&gt;
+&lt;p&gt;Going for walks with you was always an memorable time, because as a young dog you wouldn&#39;t come back. Despite numerous attempts to try and retrieve you, and calling your name repeatedly until you had enough which usually made a hour walk turn into 2 hours and half at times! At the time I would be furious but now I smile as I recollect the fond memories of this happening.&lt;/p&gt;
+&lt;p&gt;I always tried to vary the walking routes so that you&#39;d have lots of different smells and places to explore. You were such a good sport at playing fetch or rounding up my sister&#39;s kids. You certainly touched a lot of hearts being part of the family.&lt;/p&gt;
+&lt;p&gt;You were such an intelligent and brilliant dog, and life indeed is a bit more duller without you being there to take for a walk, or to play games with. I consider myself to be incredibly lucky to have been part of your life, and that we will miss you very much.&lt;/p&gt;
+&lt;p&gt;Thank you Jess ❤️&lt;/p&gt;
+&lt;h3&gt;27th May 2008  – 13th November 2021 (13y 5m 18d)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.jamesloveridge.dev/notes/2021/49/images/jess.jpg&quot; alt=&quot;Jess, a 11 year old Border Collie with her favourite toy (at the time of the photo being taken)&quot; /&gt;
+So here&#39;s one of my favourite photos of Jess. This photo was taken in the morning on 10th August 2019 at my parents&#39; home.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
