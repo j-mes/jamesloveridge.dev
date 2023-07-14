@@ -6,7 +6,11 @@
 	"scripts": {
 		"build": "eleventy",
 		"build:prod": "ELEVENTY_ENV=production eleventy",
+		"clean": "rm -rf _site main.css",
+		"css": "postcss -o main.css css/*.css",
+		"css:prod": "postcss -o main.css css/*.css --no-map",
 		"debug": "DEBUG=* eleventy",
+		"publish": "npm run build:prod & npm run css:prod",
 		"serve": "eleventy --serve"
 	},
 	"repository": {
@@ -23,13 +27,15 @@
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"autoprefixer": "^10.4.14",
 		"eslint": "^8.44.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^5.0.0",
 		"nunjucks": "^3.2.3",
+		"postcss-cli": "^10.1.0",
+		"postcss-minify": "^1.1.0",
 		"prettier": "^3.0.0"
 	},
-	"dependencies": {},
 	"volta": {
 		"node": "18.16.1"
 	}

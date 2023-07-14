@@ -12,6 +12,7 @@ module.exports = (config) => {
 	);
 
 	config.addPassthroughCopy('images');
+	config.addPassthroughCopy('main.css');
 	config.setLibrary('njk', nunjucksEnv);
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
