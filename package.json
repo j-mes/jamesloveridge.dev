@@ -6,7 +6,11 @@
 	"scripts": {
 		"build": "eleventy",
 		"build:prod": "ELEVENTY_ENV=production eleventy",
+		"clean": "rm -rf _site main.css",
+		"css": "postcss -o main.css css/*.css",
+		"css:prod": "postcss -o main.css css/*.css --no-map",
 		"debug": "DEBUG=* eleventy",
+		"publish": "npm run build:prod & npm run css:prod",
 		"serve": "eleventy --serve"
 	},
 	"repository": {
