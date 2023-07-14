@@ -8,14 +8,16 @@ const siteName = require(`${utils}/site-name`);
 
 module.exports = (config) => {
 	const nunjucksEnv = new nunjucks.Environment(
-		new nunjucks.FileSystemLoader('_includes')
+		new nunjucks.FileSystemLoader('_includes'),
 	);
 
 	config.addPassthroughCopy('images');
+	config.addPassthroughCopy('main.css');
 	config.setLibrary('njk', nunjucksEnv);
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
-		words: 'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy'
+		words:
+			'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy',
 	});
 	config.addPlugin(pluginRss);
 	config.addNunjucksShortcode('siteName', siteName);
@@ -23,8 +25,8 @@ module.exports = (config) => {
 	return {
 		dir: {
 			input: './',
-			output: './_site'
+			output: './_site',
 		},
-		passthroughFileCopy: true
+		passthroughFileCopy: true,
 	};
 };
