@@ -18,5 +18,5 @@ You were such an intelligent and brilliant dog, and life indeed is a bit more du
 Thank you Jess ❤️
 
 ### 27th May 2008  &ndash; 13th November 2021 (13y 5m 18d)
-![Jess, a 11 year old Border Collie with her favourite toy (at the time of the photo being taken)](images/jess.jpg)
+![Jess, a 11 year old Border Collie with her favourite toy (at the time of the photo being taken)](//jamesloveridge.dev/images/notes/2021/49/jess.jpg)
 So here's one of my favourite photos of Jess. This photo was taken in the morning on 10th August 2019 at my parents' home.
