@@ -2,19 +2,17 @@ const nunjucks = require('nunjucks');
 const inclusiveLanguage = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
-const utils = './_includes/utils';
-const blocks = './_includes/blocks';
+const utils = './src/_includes/utils';
+const blocks = './src/_includes/blocks';
 const siteName = require(`${utils}/site-name`);
 
 module.exports = (config) => {
 	const nunjucksEnv = new nunjucks.Environment(
-		new nunjucks.FileSystemLoader('_includes'),
+		new nunjucks.FileSystemLoader('./src/_includes'),
 	);
-
-	config.addPassthroughCopy('images');
-	config.addPassthroughCopy('main.css');
-	config.addPassthroughCopy('CNAME');
 	config.setLibrary('njk', nunjucksEnv);
+	config.addNunjucksShortcode('siteName', siteName);
+
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
 		words:
@@ -38,12 +36,15 @@ module.exports = (config) => {
 		return postsByYear;
 	});
 
+	config.addPassthroughCopy('./src/images');
+	config.addPassthroughCopy('./src/main.css');
+	config.addPassthroughCopy('./CNAME');
+
 	config.addPlugin(pluginRss);
-	config.addNunjucksShortcode('siteName', siteName);
 
 	return {
 		dir: {
-			input: './',
+			input: './src',
 			output: './_site',
 		},
 		passthroughFileCopy: true,
