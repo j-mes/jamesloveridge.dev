@@ -20,6 +20,24 @@ module.exports = (config) => {
 		words:
 			'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy',
 	});
+
+	// group intermittent notes by years
+	config.addCollection('postsByYear', (collection) => {
+		const posts = collection.getFilteredByTag('notes').reverse();
+		const years = posts.map((post) => post.date.getFullYear());
+		const uniqueYears = [...new Set(years)];
+
+		const postsByYear = uniqueYears.reduce((prev, year) => {
+			const filteredPosts = posts.filter(
+				(post) => post.date.getFullYear() === year,
+			);
+
+			return [...prev, [year, filteredPosts]];
+		}, []);
+
+		return postsByYear;
+	});
+
 	config.addPlugin(pluginRss);
 	config.addNunjucksShortcode('siteName', siteName);
 
