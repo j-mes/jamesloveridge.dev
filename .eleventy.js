@@ -38,7 +38,7 @@ module.exports = (config) => {
 
 	config.addPassthroughCopy('./src/images');
 	config.addPassthroughCopy('./src/main.css');
-	config.addPassthroughCopy('./CNAME');
+	config.addPassthroughCopy('./src/CNAME');
 
 	config.addPlugin(pluginRss);
 
