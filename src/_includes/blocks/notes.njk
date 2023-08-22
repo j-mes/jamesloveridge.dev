@@ -3,9 +3,7 @@
 	<ul>
 		{% for post in yearPosts | reverse %}
 		<li>
-			<a href="{{ post.url | url }}" title="{{ post.data.title }}">
-				{{ post.data.title }}
-			</a>
+			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
 			&ndash; {{ post.data.date.toDateString('en-GB') }}
 		</li>
 		{% endfor %}
