@@ -5,6 +5,16 @@ updates:
   schedule:
     interval: daily
     time: "10:00"
+    timezone: "Europe/London"
+  commit-message:
+      prefix: "fix:"
+      prefix-development: "chore:"
+    groups:
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
   open-pull-requests-limit: 10
   ignore:
   - dependency-name: eslint-config-prettier
