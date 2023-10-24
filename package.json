@@ -30,7 +30,7 @@
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-prettier": "^5.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
 		"nunjucks": "^3.2.3",
 		"postcss-cli": "^10.1.0",
 		"postcss-minify": "^1.1.0",
