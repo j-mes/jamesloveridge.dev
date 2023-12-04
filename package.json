@@ -29,7 +29,7 @@
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.54.0",
-		"eslint-config-prettier": "^9.0.0",
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.0.1",
 		"nunjucks": "^3.2.3",
 		"postcss-cli": "^10.1.0",
