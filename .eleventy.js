@@ -1,4 +1,8 @@
 const nunjucks = require('nunjucks');
+const postcss = require('postcss');
+const autoprefixer = require('autoprefixer');
+const postCssCsso = require('postcss-csso');
+const postCssImport = require('postcss-import');
 const inclusiveLanguage = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
@@ -12,6 +16,28 @@ module.exports = (config) => {
 	);
 	config.setLibrary('njk', nunjucksEnv);
 	config.addNunjucksShortcode('siteName', siteName);
+
+	config.addTemplateFormats('css');
+
+	// compile css on the fly
+	config.addExtension('css', {
+		outputFileExtension: 'css',
+		compile: async (inputContent, inputPath) => {
+			if (inputPath !== './src/css/main.css') {
+				return;
+			}
+
+			return async () => {
+				let main = await postcss([
+					postCssImport,
+					autoprefixer,
+					postCssCsso,
+				]).process(inputContent, { from: inputPath });
+
+				return main.css;
+			};
+		},
+	});
 
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
@@ -37,7 +63,6 @@ module.exports = (config) => {
 	});
 
 	config.addPassthroughCopy('./src/images');
-	config.addPassthroughCopy('./src/main.css');
 	config.addPassthroughCopy('./src/CNAME');
 
 	config.addPlugin(pluginRss);
