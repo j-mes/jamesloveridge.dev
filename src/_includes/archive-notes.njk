@@ -3,7 +3,8 @@
 	{% include './blocks/head.njk' %}
 	<body>
 		{% include './blocks/header.njk' %}
-		<main>
+		<main data-page="notes-archive">
+			<h1 class="notes__page-title">Intermittent notes…</h1>
 			{{ content | safe }}
 			{% include './blocks/notes.njk' %}
 		</main>
