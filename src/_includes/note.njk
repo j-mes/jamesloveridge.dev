@@ -3,9 +3,9 @@
 	{% include './blocks/head.njk' %}
 	<body>
 		{% include './blocks/header.njk' %}
-		<main>
-			<article>
-				<h1>{{ title }}</h1>
+		<main data-page="note">
+			<article class="note__content">
+				<h1 class="note__page-title">{{ title }}</h1>
 				{{ content | safe }}
 				<span><em>{{ date.toDateString() }}</em></span>
 				<hr />
