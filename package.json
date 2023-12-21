@@ -7,11 +7,10 @@
 		"build": "eleventy",
 		"build:prod": "ELEVENTY_ENV=production eleventy",
 		"clean": "rm -rf _site src/main.css",
-		"css": "postcss -o main.css src/css/*.css",
-		"css:prod": "postcss -o main.css src/css/*.css --no-map",
 		"debug": "DEBUG=* eleventy",
 		"publish": "npm run build:prod & npm run css:prod",
-		"serve": "eleventy --serve"
+		"serve": "eleventy --serve",
+		"start": "npm run serve"
 	},
 	"repository": {
 		"type": "git",
@@ -35,7 +34,6 @@
 		"postcss-cli": "^11.0.0",
 		"postcss-csso": "^6.0.1",
 		"postcss-import": "^15.1.0",
-		"postcss-minify": "^1.1.0",
 		"prettier": "^3.1.1"
 	},
 	"volta": {
