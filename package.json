@@ -8,7 +8,7 @@
 		"build:prod": "ELEVENTY_ENV=production eleventy",
 		"clean": "rm -rf _site src/main.css",
 		"debug": "DEBUG=* eleventy",
-		"publish": "npm run build:prod & npm run css:prod",
+		"publish": "npm run build:prod",
 		"serve": "eleventy --serve",
 		"start": "npm run serve"
 	},
