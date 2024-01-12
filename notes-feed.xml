@@ -4,7 +4,7 @@
 	<subtitle>A Software Engineer by day, a gamer at night</subtitle>
 	<link href="https://jamesloveridge.dev/notes-feed.xml" rel="self"/>
 	<link href="https://www.jamesloveridge.dev/"/>
-	<updated>2023-08-11T00:00:00Z</updated>
+	<updated>2024-01-12T00:00:00Z</updated>
 	<id>https://www.jamesloveridge.dev/</id>
 	<author>
 		<name>James Loveridge</name>
@@ -370,6 +370,38 @@ So here&#39;s one of my favourite photos of Jess. This photo was taken in the mo
 &lt;li&gt;My sodding gas boiler broke, and I&#39;m now having to find a gas safe engineer to do a replacement boiler and all the additional work to go along with it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I&#39;m actually looking forward to the football season which starts tonight. It&#39;ll be interesting to see if my beloved Arsenal will go one step further this time and win the sodding thing instead of fading away in the last few games like last season…&lt;/p&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Hello intermittent notes, my old friend</title>
+		<link href="https://www.jamesloveridge.dev/notes/2024/2/"/>
+		<updated>2024-01-12T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2024/2/</id>
+		<content type="html">&lt;p&gt;A new year, a new James? Or is it more like &#39;Different year, same James&#39;? 🤣&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I got shamed at work by &lt;a href=&quot;https://rowanmanning.com/&quot;&gt;Rowan&lt;/a&gt; for not posting any notes for a long time after I mentioned that one of his &lt;a href=&quot;https://rowanmanning.com/weeknotes/166/&quot;&gt;weeknotes&lt;/a&gt; had me in giggles. What a character Rowan&#39;s grandmother is! So here you go, I&#39;ve littered your RSS feed reader with something that&#39;s nowhere near as useful then 😏&lt;/li&gt;
+&lt;li&gt;I have had an incredibly busy festive period with my family, and I am actually looking forward to January as that&#39;s when people are more antisocial right? Which would let me stay at home and potter around to my own devices right?&lt;/li&gt;
+&lt;li&gt;I&#39;m massively looking forward to going to Spa Valley Heritage Railway tomorrow with Kit. Experiencing a preserved Steam locomotive with its noise, smells and how it goes over the rails with old carriages behind to ride in, is a wonderful experience and &lt;em&gt;everyone&lt;/em&gt; should do it at least once every year!&lt;/li&gt;
+&lt;li&gt;I&#39;ll try and write an intermittent note every Friday…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Under the hood improvements&lt;/h2&gt;
+&lt;p&gt;I did make some improvements to the website, which isn&#39;t very visible to anyone who isn&#39;t a web developer or a software engineer stalking me on GitHub. So here goes what I&#39;ve done to the site since my last intermittent note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed the broken RSS feed file&lt;/li&gt;
+&lt;li&gt;Add CSS compilation on build &amp;amp; deploy (No more committing compiled CSS files!)&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;data-attributes&lt;/code&gt; to the pages on the site (I&#39;ll write more on this later) for the future plans.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Future plans&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Do something better with the homepage than duplicating what &lt;a href=&quot;https://jamesloveridge.dev/notes/&quot;&gt;Notes&lt;/a&gt; is.&lt;/li&gt;
+&lt;li&gt;Fix the order of the posts in the years on Notes so that it&#39;s in reverse order of when it was published.&lt;/li&gt;
+&lt;li&gt;Add more categories of other things (yet to be announced).&lt;/li&gt;
+&lt;li&gt;Write a &#39;About&#39; page and put it in.&lt;/li&gt;
+&lt;li&gt;Use data-attributes for each page to do specific styling&lt;/li&gt;
+&lt;li&gt;Add in my old long form articles under &#39;Writing&#39; and use specific styling for it (old university things).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Until then 👋&lt;/p&gt;
 </content>
 	</entry>
