@@ -4,6 +4,8 @@
 	<body>
 		{% include './blocks/header.njk' %}
 		<main data-page="home">
+			{{ content | safe }}
+
 			<h2>Latest intermittent note</h2>
 			{%- set latestNote = collections.notes | last -%}
 			<a href="{{ latestNote.url }}" title="{{ latestNote.data.title }}">
