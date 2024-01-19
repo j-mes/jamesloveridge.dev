@@ -405,4 +405,28 @@ So here&#39;s one of my favourite photos of Jess. This photo was taken in the mo
 &lt;p&gt;Until then 👋&lt;/p&gt;
 </content>
 	</entry>
+	
+	<entry>
+		<title>Undiscovered pubs…</title>
+		<link href="https://www.jamesloveridge.dev/notes/2024/3/"/>
+		<updated>2024-01-12T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2024/3/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://jamesloveridge.dev/images/notes/2024/3/cr-828-spa-valley-railway-13-jan-2024.jpg&quot; alt=&quot;A Caledonian Railway Class 812 No. 828 at Spa Valley Heritage Railway on 13th January 2024&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I throughly enjoyed the 🚂 (Choo-choo) at Spa Valley Heritage Railway on Saturday. It was excellent, despite making Kit hang around at a station for just under a hour in pretty cold temperatures and discovering there was a warm pub 1 minute away from a station just before the train arrives to take us from Groombridge to Eridge then back to Tunbridge Wells West. Next time we&#39;ll Google Maps it and see where the nearest pub is 🤣&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For those that like steam locomotives, the one in the photo is a Caledonian Railway 812 numbered 828. More information on this particular locomotive can be found on &lt;a href=&quot;https://en.wikipedia.org/wiki/Caledonian_Railway_812_and_652_Classes&quot;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At work I&#39;ve been on OpsWatch this week, and have remarked at the number of requests we as a team have recieved for changing things in the newsletters that the FT sends out every day. I cannot wait to see the work we complete which will make those kind of requests very much self-service in the future!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I forgot to add to the future plans last week. I do want to try out &lt;a href=&quot;https://www.w3.org/TR/webmention/&quot;&gt;WebMentions&lt;/a&gt;. Fortunately for me &lt;a href=&quot;https://rowanmanning.com/posts/webmentions-for-your-static-site/&quot;&gt;Rowan&lt;/a&gt; has made a good guide for this. I&#39;ll have to figure out how to make the GitHub Actions deploy job run intermittently throughout the day! Is it basically gamification to see how many people liked your note? Time will tell!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
+</content>
+	</entry>
 </feed>
