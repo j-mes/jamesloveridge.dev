@@ -56,7 +56,7 @@ module.exports = (config) => {
 				(post) => post.date.getFullYear() === year,
 			);
 
-			return [...prev, [year, filteredPosts]];
+			return [...prev, [year, filteredPosts.reverse()]];
 		}, []);
 
 		return postsByYear;
