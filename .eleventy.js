@@ -45,6 +45,10 @@ module.exports = (config) => {
 			'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy',
 	});
 
+	config.addFilter('truncatewords', function (str = '', limit = 30) {
+		return str.toString().trim().split(/\s+/g, limit).join(' ') + '&hellip;';
+	});
+
 	// group intermittent notes by years
 	config.addCollection('postsByYear', (collection) => {
 		const posts = collection.getFilteredByTag('notes').reverse();

@@ -5,8 +5,26 @@
 		{% include './blocks/header.njk' %}
 		<main data-page="home">
 			{{ content | safe }}
-			<h2>Intermittent notes…</h2>
-			{% include './blocks/notes.njk' %}
+			<h2>Latest intermittent note</h2>
+			<!-- {% include './blocks/notes.njk' %} -->
+			{%- set latestNote = collections.notes | last -%}
+			<a href="{{ latestNote.url }}" title="{{ latestNote.data.title }}">
+				<h3>{{ latestNote.data.title }}</h3>
+			</a>
+					
+			<p>
+				{{ latestNote.templateContent | striptags(true) | truncatewords(60) | safe}}
+			</p>
+
+			<p>
+				<a href="{{ latestNote.url }}">See the rest of this intermittent note entry</a>
+			</p>
+
+			<h3>Here's the other things for intermittent notes</h3>
+			<ul>
+				<li><a href="/notes/">Archives</a></li>
+				<li><a href="https://jamesloveridge.dev/notes-feed.xml">RSS feed</a></li>
+			</ul>
 		</main>
 		{% include './blocks/footer.njk' %}
 	</body>
