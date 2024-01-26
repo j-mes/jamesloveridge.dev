@@ -4,7 +4,7 @@
 		{% for post in yearPosts | reverse %}
 		<li class="notes__item">
 			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
-			&ndash; {{ post.data.date.toDateString('en-GB') }}
+			&ndash; {{ post.data.date.toLocaleDateString('en-GB', { day: "numeric", month: "long" }) }}
 		</li>
 		{% endfor %}
 	</ul>

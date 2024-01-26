@@ -7,7 +7,7 @@
 			<article class="note__content">
 				<h1 class="note__page-title">{{ title }}</h1>
 				{{ content | safe }}
-				<span><em>{{ date.toDateString() }}</em></span>
+				<span><em>{{ date.toLocaleDateString('en-GB', { day: "numeric", month: "long", year: "numeric" }) }}</em></span>
 				<hr />
 				<a href="/" title="Return to homepage">Return to home</a>
 			</article>
