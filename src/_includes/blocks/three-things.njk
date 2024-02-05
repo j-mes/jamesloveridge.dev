@@ -1,0 +1,11 @@
+{% for year, yearPosts in collections.postsByYearThreeThings %}
+	<h2>{{ year }}</h2>
+	<ul>
+		{% for post in yearPosts | reverse %}
+		<li>
+			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
+			&ndash; {{ post.data.date.toLocaleDateString('en-GB', { day: "numeric", month: "long" }) }}
+		</li>
+		{% endfor %}
+	</ul>
+{% endfor %}
