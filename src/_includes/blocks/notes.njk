@@ -1,8 +1,8 @@
-{% for year, yearPosts in collections.postsByYear %}
-	<h2 class="notes__title">{{ year }}</h2>
-	<ul class="notes__list">
+{% for year, yearPosts in collections.postsByYearNotes %}
+	<h2>{{ year }}</h2>
+	<ul>
 		{% for post in yearPosts | reverse %}
-		<li class="notes__item">
+		<li>
 			<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
 			&ndash; {{ post.data.date.toLocaleDateString('en-GB', { day: "numeric", month: "long" }) }}
 		</li>
