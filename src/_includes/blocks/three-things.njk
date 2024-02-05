@@ -1,4 +1,4 @@
-{% for year, yearPosts in collections.postsByYearNotes %}
+{% for year, yearPosts in collections.postsByYearThreeThings %}
 	<h2>{{ year }}</h2>
 	<ul>
 		{% for post in yearPosts | reverse %}
@@ -9,5 +9,3 @@
 		{% endfor %}
 	</ul>
 {% endfor %}
-
-<small><a href="https://jamesloveridge.dev/notes-feed.xml" title="Subscribe to the RSS feed if you dare to…">RSS feed</a></small>

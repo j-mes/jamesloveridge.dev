@@ -10,7 +10,7 @@
 		"debug": "DEBUG=* eleventy",
 		"publish": "npm run build:prod",
 		"serve": "eleventy --serve",
-		"start": "npm run serve"
+		"start": "npm run serve --incremental --quiet"
 	},
 	"repository": {
 		"type": "git",

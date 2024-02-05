@@ -1,10 +1,9 @@
 const nunjucks = require('nunjucks');
-const postcss = require('postcss');
-const autoprefixer = require('autoprefixer');
-const postCssCsso = require('postcss-csso');
-const postCssImport = require('postcss-import');
 const inclusiveLanguage = require('@11ty/eleventy-plugin-inclusive-language');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const notInclusiveWords = require('./src/_11ty/helpers/not-inclusive-words');
+const truncateWords = require('./src/_11ty/helpers/truncate-words');
+const cssSettings = require('./src/_11ty/helpers/css-settings');
 
 const utils = './src/_includes/utils';
 const blocks = './src/_includes/blocks';
@@ -18,39 +17,27 @@ module.exports = (config) => {
 	config.addNunjucksShortcode('siteName', siteName);
 
 	config.addTemplateFormats('css');
+	config.addExtension('css', cssSettings);
 
-	// compile css on the fly
-	config.addExtension('css', {
-		outputFileExtension: 'css',
-		compile: async (inputContent, inputPath) => {
-			if (inputPath !== './src/css/main.css') {
-				return;
-			}
+	// Eleventy filters
+	config.addFilter('truncatewords', truncateWords);
 
-			return async () => {
-				let main = await postcss([
-					postCssImport,
-					autoprefixer,
-					postCssCsso,
-				]).process(inputContent, { from: inputPath });
+	// Eleventy Pass Throughs
+	config.addPassthroughCopy('./src/images');
+	config.addPassthroughCopy('./src/CNAME');
 
-				return main.css;
-			};
-		},
-	});
-
+	// Eleventy plugins
 	config.addPlugin(inclusiveLanguage, {
 		templateFormats: ['md'],
-		words:
-			'simply,obviously,basically,of course,clearly,just,everyone knows,however,easy',
+		words: notInclusiveWords,
 	});
+	config.addPlugin(pluginRss);
 
-	config.addFilter('truncatewords', function (str = '', limit = 30) {
-		return str.toString().trim().split(/\s+/g, limit).join(' ') + '&hellip;';
-	});
+	// TODO: Make the following two 'addCollections' to be scalable
+	// and not so brittle like below. 🤦
 
 	// group intermittent notes by years
-	config.addCollection('postsByYear', (collection) => {
+	config.addCollection('postsByYearNotes', (collection) => {
 		const posts = collection.getFilteredByTag('notes').reverse();
 		const years = posts.map((post) => post.date.getFullYear());
 		const uniqueYears = [...new Set(years)];
@@ -66,10 +53,22 @@ module.exports = (config) => {
 		return postsByYear;
 	});
 
-	config.addPassthroughCopy('./src/images');
-	config.addPassthroughCopy('./src/CNAME');
+	// group three things by years
+	config.addCollection('postsByYearThreeThings', (collection) => {
+		const posts = collection.getFilteredByTag('three-things').reverse();
+		const years = posts.map((post) => post.date.getFullYear());
+		const uniqueYears = [...new Set(years)];
 
-	config.addPlugin(pluginRss);
+		const postsByYear = uniqueYears.reduce((prev, year) => {
+			const filteredPosts = posts.filter(
+				(post) => post.date.getFullYear() === year,
+			);
+
+			return [...prev, [year, filteredPosts.reverse()]];
+		}, []);
+
+		return postsByYear;
+	});
 
 	return {
 		dir: {
