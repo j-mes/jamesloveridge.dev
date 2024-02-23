@@ -56,3 +56,22 @@ img {
 		color: var(--colour-link-alt);
 	}
 }
+
+footer {
+	padding: 2rem 0;
+}
+
+footer svg {
+	height: 1rem;
+	width: auto;
+}
+
+footer ul {
+	list-style: none;
+	text-align: right;
+}
+
+footer li {
+	display: inline-block;
+	padding: 0 5px;
+}
