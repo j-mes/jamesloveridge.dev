@@ -4,7 +4,7 @@
 	<subtitle>A Software Engineer by day, a gamer at night</subtitle>
 	<link href="https://jamesloveridge.dev/notes-feed.xml" rel="self"/>
 	<link href="https://www.jamesloveridge.dev/"/>
-	<updated>2024-02-09T00:00:00Z</updated>
+	<updated>2024-02-23T00:00:00Z</updated>
 	<id>https://www.jamesloveridge.dev/</id>
 	<author>
 		<name>James Loveridge</name>
@@ -501,6 +501,32 @@ So here&#39;s one of my favourite photos of Jess. This photo was taken in the mo
 &lt;/ul&gt;
 &lt;p&gt;Until then 👋&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; &lt;em&gt;I&#39;m aware that the FT article might be behind a paywall. Nudge me if you want access and I&#39;ll gift you the article to read.&lt;/em&gt; 🙂&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Whilst on a 🚂, writing this note</title>
+		<link href="https://www.jamesloveridge.dev/notes/2024/8/"/>
+		<updated>2024-02-23T00:00:00Z</updated>
+		<id>https://www.jamesloveridge.dev/notes/2024/8/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dear reader, you might have noticed that I indeed did not do an intermittent note entry last week. The truth is, I had a day off from work, and it was a laptop-free day so I didn&#39;t make the time to write something which I normally do on Fridays. It&#39;s a very good thing that I have &amp;quot;intermittent notes&amp;quot; set as a thing in here right. It means I can be kind to myself and not punish myself for missing one week.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As I&#39;m writing this on &lt;em&gt;yet&lt;/em&gt; another day off from work albeit with a slight difference, I&#39;m currently writing this onboard an Avanti West Coast train speeding along to Glasgow to meet a friend for a night and a day. I took advantage of the 50% rail sale a while back and managed to get myself a return journey for a tidy sum of £35. Hopefully I don&#39;t get a Glasgow kiss.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Work wise, things are getting along fine, we keep getting so many author byline change requests… it keeps making me want to do 10% time to do the author changes to become self-service. However I need to work out how to do that gracefully first especially with one newsletter having over 100 authors. Maybe have their byline photos as a place to change things or make a simple form that lets them amend, create or delete.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At work, there is a mammoth system service called Biz-Ops, which collates all the information about systems across the FT. It covers so many things that it provides solid business sense to keep iterating on top of it. All of that wouldn&#39;t be possible without &lt;a href=&quot;https://wheresrhys.co.uk/&quot;&gt;Rhys Evans&lt;/a&gt;. Rhys argued and pushed its case forward and led the development on it for many years. It&#39;s kind of a bittersweet feeling here, because Rhys won&#39;t be working at the FT anymore at time of this note. He will have left the FT with a system that will help everyone at the FT long afterwards. There&#39;s something to be said about coding a system that will potentially live past your tenure at the organisation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By the way, I wanted to see if my site would break with using an emoji in the title, like it did a few weeks back for a certain system… 🤣&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Until then 👋&lt;/p&gt;
 </content>
 	</entry>
 </feed>
