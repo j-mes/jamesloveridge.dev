@@ -46,17 +46,6 @@ img {
 	width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: var(--colour-dark);
-		color: var(--colour-light);
-	}
-
-	a {
-		color: var(--colour-link-alt);
-	}
-}
-
 footer {
 	padding: 2rem 0;
 }
@@ -64,6 +53,10 @@ footer {
 footer svg {
 	height: 1rem;
 	width: auto;
+}
+
+footer a svg path {
+	color: var(--colour-link);
 }
 
 footer ul {
@@ -74,4 +67,19 @@ footer ul {
 footer li {
 	display: inline-block;
 	padding: 0 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--colour-dark);
+		color: var(--colour-light);
+	}
+
+	a {
+		color: var(--colour-link-alt);
+	}
+
+	footer a svg path {
+		color: var(--colour-link-alt);
+	}
 }
