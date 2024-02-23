@@ -56,7 +56,7 @@ footer svg {
 }
 
 footer a svg path {
-	color: var(--colour-link);
+	fill: var(--colour-link);
 }
 
 footer ul {
@@ -80,6 +80,6 @@ footer li {
 	}
 
 	footer a svg path {
-		color: var(--colour-link-alt);
+		fill: var(--colour-link-alt);
 	}
 }
